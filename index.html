@@ -20,7 +20,7 @@ body{padding-bottom:calc(var(--nav) + env(safe-area-inset-bottom,0px) + 16px)}
 button,input,select,textarea{font:inherit;color:inherit}
 h1,h2,h3{margin:0}
 .hdr{position:sticky;top:0;z-index:20;background:var(--surf);border-bottom:1px solid var(--line);padding:calc(8px + env(safe-area-inset-top,0px)) 14px 8px;display:flex;align-items:center;gap:10px}
-.hdr img{height:34px;width:auto;display:block}
+.hdr img{height:44px;width:auto;display:block}
 .hdr .ttl{flex:1;min-width:0}
 .hdr .ttl b{display:block;font-size:16px;line-height:1.15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .hdr .ttl small{color:var(--mut);font-size:11.5px}
@@ -644,7 +644,7 @@ ACT['demo-reset'] = function () { DB.reset(); seedDemo(DB); toast('Demo data res
     ['finishedGoods', 'Finished goods', 'റെഡി സാധനങ്ങൾ', 'तैयार माल'], ['materials', 'Raw materials', 'അസംസ്കൃത വസ്തുക്കൾ', 'कच्चा माल'], ['stockLog', 'Stock log', 'സ്റ്റോക്ക് ലോഗ്', 'स्टॉक लॉग'], ['adjustStock', 'Update stock', 'സ്റ്റോക്ക് മാറ്റുക', 'स्टॉक बदलें'], ['setStock', 'Set stock', 'സ്റ്റോക്ക് നൽകുക', 'स्टॉक डालें'], ['current', 'Current', 'ഇപ്പോൾ', 'अभी'], ['addRemove', 'Add / remove', 'കൂട്ടുക / കുറയ്ക്കുക', 'जोड़ें / घटाएं'],
     ['addMaterial', 'Add material', 'മെറ്റീരിയൽ ചേർക്കുക', 'सामग्री जोड़ें'], ['noMaterials', 'No materials', 'മെറ്റീരിയൽ ഇല്ല', 'कोई सामग्री नहीं'], ['toProduce', 'To produce', 'ഉണ്ടാക്കാനുള്ളത്', 'बनाना है'], ['history', 'History', 'ചരിത്രം', 'इतिहास'], ['min', 'Minimum', 'കുറഞ്ഞത്', 'न्यूनतम'],
     ['newPurchase', 'New purchase', 'പുതിയ വാങ്ങൽ', 'नई खरीद'], ['editPurchase', 'Edit purchase', 'വാങ്ങൽ തിരുത്തുക', 'खरीद बदलें'], ['noPurchases', 'No purchases', 'വാങ്ങലുകൾ ഇല്ല', 'कोई खरीद नहीं'], ['shops', 'Shops', 'കടകൾ', 'दुकानें'], ['shop', 'Shop', 'കട', 'दुकान'], ['shopName', 'Shop name', 'കടയുടെ പേര്', 'दुकान का नाम'], ['addShop', 'Add shop', 'കട ചേർക്കുക', 'दुकान जोड़ें'], ['editShop', 'Edit shop', 'കട തിരുത്തുക', 'दुकान बदलें'], ['noShops', 'No shops', 'കടകൾ ഇല്ല', 'कोई दुकान नहीं'], ['suppliesWhat', 'Supplies', 'നൽകുന്നത്', 'क्या देते हैं'],
-    ['toBuy', 'To buy', 'വാങ്ങണം', 'खरीदना है'], ['pickups', 'Pickups', 'പിക്കപ്പ്', 'पिकअप'], ['markPicked', 'Picked up', 'എടുത്തു', 'उठा लिया'], ['recordBill', 'Add bill', 'ബിൽ ചേർക്കുക', 'बिल जोड़ें'], ['billAmt', 'Bill amount', 'ബിൽ തുക', 'बिल की रकम'], ['billPhoto', 'Bill photo', 'ബിൽ ഫോട്ടോ', 'बिल की फोटो'], ['addToMaterials', 'Add items to materials stock', 'ഐറ്റങ്ങൾ മെറ്റീരിയൽ സ്റ്റോക്കിൽ ചേർക്കുക', 'आइटम सामग्री स्टॉक में जोड़ें'], ['bought', 'Bought', 'വാങ്ങി', 'खरीदा'],
+    ['toBuy', 'To buy', 'വാങ്ങണം', 'खरीदना है'], ['pickups', 'Pickups', 'പിക്കപ്പ്', 'पिकअप'], ['markPicked', 'Picked up', 'എടുത്തു', 'उठा लिया'], ['recordBill', 'Add bill', 'ബിൽ ചേർക്കുക', 'बिल जोड़ें'], ['billAmt', 'Bill amount', 'ബിൽ തുക', 'बिल की रकम'], ['billPhoto', 'Bill photo', 'ബിൽ ഫോട്ടോ', 'बिल की फोटो'], ['addToMaterials', 'Add items to materials stock', 'ഐറ്റങ്ങൾ മെറ്റീരിയൽ സ്റ്റോക്കിൽ ചേർക്കുക', 'आइटम सामग्री स्टॉक में जोड़ें'], ['bought', 'Bought', 'വാങ്ങി', 'खरीदा'], ['quickItems', 'Saved items (tap to add)', 'സ്ഥിരം ഐറ്റങ്ങൾ (അമർത്തി ചേർക്കുക)', 'पहले के आइटम (दबाकर जोड़ें)'], ['repeatOrder', 'Repeat this purchase', 'ഇതേ വാങ്ങൽ വീണ്ടും', 'यही खरीद दोबारा'],
     ['waShop', 'WhatsApp shop', 'കടയ്ക്ക് വാട്സ്ആപ്പ്', 'दुकान को व्हाट्सऐप'], ['waSlip', 'Pickup slip', 'പിക്കപ്പ് സ്ലിപ്', 'पिकअप पर्ची'], ['nPickup', 'Pickup: {no} from {s}', 'പിക്കപ്പ്: {no} — {s}', 'पिकअप: {no} — {s}'], ['nPicked', 'Picked up: {no} from {s}', 'എടുത്തു: {no} — {s}', 'उठा लिया: {no} — {s}'],
     // ---- notices / emergency
     ['newNotice', 'New notice', 'പുതിയ അറിയിപ്പ്', 'नई सूचना'], ['noNotices', 'No notices', 'അറിയിപ്പുകൾ ഇല്ല', 'कोई सूचना नहीं'], ['pinTop', 'Pin to top', 'മുകളിൽ നിർത്തുക', 'ऊपर रखें'], ['emergency', 'Emergency / urgent', 'അടിയന്തരം', 'आपातकाल / जरूरी'], ['urgentReq', 'Urgent request', 'അടിയന്തര അറിയിപ്പ്', 'जरूरी अनुरोध'],
@@ -1203,17 +1203,43 @@ function supForm() {
 ACT['sup-save'] = function () { var n = val('sf_name').trim(); if (!n) { toast(T('needName')); return; } var id = SF.id || uid('s'); put('suppliers', id, { name: n, phone: val('sf_phone').trim(), place: val('sf_place').trim(), notes: val('sf_notes').trim(), createdAt: SF.createdAt || Date.now() }); var back = S.supBack; closeSheet(); toast(T('saved')); if (back) { S.supBack = null; back(id); } };
 ACT['sup-del'] = function () { del('suppliers', SF.id); closeSheet(); };
 var PU = null;
+/* Items typed once are remembered: from raw materials and from every past purchase. Items bought from the selected shop come first. */
+function puCatalog(supId) {
+  var map = {};
+  function add(n, u, w) { var k = String(n || '').trim().toLowerCase(); if (!k) return; var e = map[k] || (map[k] = { name: String(n).trim(), unit: 'nos', c: 0 }); e.c += w; if (u) e.unit = u; }
+  D('materials').forEach(function (m) { add(m.name, m.unit, 1); });
+  D('purchases').forEach(function (p) { var w = (supId && p.supplierId === supId) ? 100 : 2; (p.lines || []).forEach(function (l) { add(l.name, l.unit, w); }); });
+  return Object.keys(map).map(function (k) { return map[k]; }).sort(function (a, b) { return b.c - a.c || (a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1); });
+}
 function puNew(base) { PU = { id: '', supplierId: '', lines: [{ name: '', qty: 1, unit: 'nos' }], driverId: '', note: '' }; if (base) Object.keys(base).forEach(function (k) { PU[k] = base[k]; }); }
 function puRead() { if (!qs('pu_sup')) return; PU.supplierId = val('pu_sup'); PU.driverId = val('pu_drv'); PU.note = val('pu_note'); PU.lines.forEach(function (l, i) { l.name = val('pl_n' + i).trim(); l.qty = num(val('pl_q' + i)) || 1; l.unit = val('pl_u' + i).trim() || 'nos'; }); }
 function puRender() {
   var drivers = activeStaff().filter(function (s) { return s.role === 'fitting' || /driver/i.test(s.designation || ''); });
   var h = '<h2>' + esc(PU.id ? T('editPurchase') : T('newPurchase')) + '</h2><label class="l">' + esc(T('shop')) + '</label><div class="row"><select id="pu_sup" class="grow"><option value="">—</option>' + D('suppliers').map(function (s) { return '<option value="' + esc(s.id) + '" ' + (PU.supplierId === s.id ? 'selected' : '') + '>' + esc(s.name) + '</option>'; }).join('') + '</select><button class="btn sm" data-act="pu-newsup">+</button></div>';
-  h += '<div class="sec">' + esc(T('items')) + '</div>' + PU.lines.map(function (l, i) { return '<div class="row" style="margin-bottom:6px"><input type="text" id="pl_n' + i + '" class="grow" placeholder="' + esc(T('itemName')) + '" value="' + esc(l.name) + '"><input type="number" id="pl_q' + i + '" style="width:70px" value="' + esc(l.qty) + '"><input type="text" id="pl_u' + i + '" style="width:62px" value="' + esc(l.unit) + '"><button class="btn sm bad" data-act="pu-del" data-i="' + i + '">✕</button></div>'; }).join('') + '<button class="btn block sm" data-act="pu-add">+ ' + esc(T('addItem')) + '</button>';
+  var cat = puCatalog(PU.supplierId), used = {};
+  PU.lines.forEach(function (l) { used[String(l.name || '').trim().toLowerCase()] = 1; });
+  var quick = cat.filter(function (c) { return !used[c.name.toLowerCase()]; }).slice(0, 14);
+  if (quick.length) h += '<div class="sec">' + esc(T('quickItems')) + '</div><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px">' + quick.map(function (c) { return '<button class="btn sm" data-act="pu-quick" data-n="' + esc(c.name) + '" data-u="' + esc(c.unit) + '">+ ' + esc(c.name) + '</button>'; }).join('') + '</div>';
+  h += '<datalist id="pu_dl">' + cat.map(function (c) { return '<option value="' + esc(c.name) + '">'; }).join('') + '</datalist>';
+  h += '<div class="sec">' + esc(T('items')) + '</div>' + PU.lines.map(function (l, i) { return '<div class="row" style="margin-bottom:6px"><input type="text" id="pl_n' + i + '" list="pu_dl" data-chg="pu_name" class="grow" placeholder="' + esc(T('itemName')) + '" value="' + esc(l.name) + '"><input type="number" id="pl_q' + i + '" style="width:70px" value="' + esc(l.qty) + '"><input type="text" id="pl_u' + i + '" style="width:62px" value="' + esc(l.unit) + '"><button class="btn sm bad" data-act="pu-del" data-i="' + i + '">✕</button></div>'; }).join('') + '<button class="btn block sm" data-act="pu-add">+ ' + esc(T('addItem')) + '</button>';
   h += '<label class="l">' + esc(T('driver')) + '</label><select id="pu_drv"><option value="">—</option>' + drivers.map(function (s) { return '<option value="' + esc(s.id) + '" ' + (PU.driverId === s.id ? 'selected' : '') + '>' + esc(s.name) + '</option>'; }).join('') + '</select><label class="l">' + esc(T('note')) + '</label><input type="text" id="pu_note" value="' + esc(PU.note) + '">';
   h += '<div class="two" style="margin-top:12px"><button class="btn" data-act="close">' + esc(T('cancel')) + '</button><button class="btn primary" data-act="pu-save">' + esc(T('save')) + '</button></div>';
   openSheet(h);
 }
 ACT['pur-new'] = function () { puNew(); puRender(); };
+CHG.pu_sup = function () { puRead(); puRender(); };
+CHG.pu_name = function (t) {
+  var i = +String(t.id).slice(4), n = String(t.value || '').trim().toLowerCase(), u = qs('pl_u' + i); if (!n || !u) return;
+  var c = puCatalog('').filter(function (x) { return x.name.toLowerCase() === n; })[0];
+  if (c && (!u.value.trim() || u.value.trim() === 'nos')) u.value = c.unit;
+};
+ACT['pu-quick'] = function (el) {
+  puRead(); var n = el.getAttribute('data-n'), u = el.getAttribute('data-u') || 'nos', e = null;
+  PU.lines.forEach(function (l) { if (!e && !l.name) e = l; });
+  if (e) { e.name = n; e.unit = u; } else PU.lines.push({ name: n, qty: 1, unit: u });
+  puRender();
+};
+ACT['pur-repeat'] = function (el) { var p = byId('purchases', el.getAttribute('data-id')); if (!p) return; puNew({ supplierId: p.supplierId || '', driverId: p.driverId || '', lines: clone(p.lines || []) }); puRender(); };
 ACT['pu-add'] = function () { puRead(); PU.lines.push({ name: '', qty: 1, unit: 'nos' }); puRender(); };
 ACT['pu-del'] = function (el) { puRead(); PU.lines.splice(+el.getAttribute('data-i'), 1); if (!PU.lines.length) PU.lines.push({ name: '', qty: 1, unit: 'nos' }); puRender(); };
 ACT['pu-newsup'] = function () { puRead(); SF = { id: '', name: '', phone: '', place: '', notes: '' }; S.supBack = function (id) { PU.supplierId = id; puRender(); }; supForm(); };
@@ -1236,6 +1262,7 @@ ACT['pur-open'] = function (el) {
     h += '<div class="two" style="margin-bottom:8px">' + (p.supplierPhone ? waBtn(p.supplierPhone, msgBuy(p, 'ml'), T('waShop') + ' മല', 'sm') + waBtn(p.supplierPhone, msgBuy(p, 'en'), T('waShop') + ' EN', 'sm') : '') + '</div>';
     if (drv && drv.phone) h += '<div style="margin-bottom:8px">' + waBtn(drv.phone, msgPickupSlip(p, drv.lang || 'en'), '📲 ' + T('waSlip') + ' · ' + drv.name, 'block') + '</div>';
     if (p.status !== 'bought') h += '<button class="btn ok block" style="margin-bottom:8px" data-act="pur-bill" data-id="' + esc(p.id) + '">🧾 ' + esc(T('recordBill')) + '</button>';
+    h += '<button class="btn block" style="margin-bottom:8px" data-act="pur-repeat" data-id="' + esc(p.id) + '">↻ ' + esc(T('repeatOrder')) + '</button>';
     h += '<div class="two"><button class="btn" data-act="pur-edit" data-id="' + esc(p.id) + '">✎ ' + esc(T('edit')) + '</button><button class="btn bad" data-act="pur-del" data-id="' + esc(p.id) + '">' + esc(T('delete')) + '</button></div>';
   }
   openSheet(h + '<button class="btn block" style="margin-top:8px" data-act="close">' + esc(T('close')) + '</button>');
