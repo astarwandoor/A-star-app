@@ -622,7 +622,7 @@ ACT['demo-reset'] = function () { DB.reset(); seedDemo(DB); toast('Demo data res
     ['prodOkBtn', 'Production OK', 'പ്രൊഡക്ഷൻ OK', 'प्रोडक्शन OK'], ['prodNoBtn', 'Production NOT OK', 'പ്രൊഡക്ഷൻ പറ്റില്ല', 'प्रोडक्शन नहीं हो सकता'], ['prodYes', 'Production OK', 'പ്രൊഡക്ഷൻ OK', 'प्रोडक्शन OK'], ['prodNo', 'Production NOT OK', 'പ്രൊഡക്ഷൻ പറ്റില്ല', 'प्रोडक्शन नहीं हो सकता'],
     ['waitProd', 'Waiting for production', 'പ്രൊഡക്ഷൻ കാത്തിരിക്കുന്നു', 'प्रोडक्शन का इंतजार'], ['markReady', 'Mark ready', 'റെഡി ആക്കുക', 'तैयार करें'], ['readyN', 'Ready', 'റെഡി', 'तैयार'],
     ['fitOkBtn', 'OK for date', 'ഈ തീയതിക്ക് OK', 'इस तारीख के लिए OK'], ['fitNoBtn', 'Cannot go', 'പോകാൻ പറ്റില്ല', 'नहीं जा सकते'], ['fitYes', 'Fitting OK', 'ഫിറ്റിംഗ് OK', 'फिटिंग OK'], ['fitDelay', 'Fitting cannot go', 'ഫിറ്റിംഗ് പോകില്ല', 'फिटिंग नहीं जाएगी'], ['markFitted', 'Fitted / delivered', 'ഫിറ്റ് ചെയ്തു / ഡെലിവർ ചെയ്തു', 'फिट / डिलीवर हो गया'],
-    ['closeOrder', 'Close order', 'ഓർഡർ ക്ലോസ് ചെയ്യുക', 'ऑर्डर बंद करें'], ['cancelOrder', 'Cancel order', 'ഓർഡർ റദ്ദാക്കുക', 'ऑर्डर रद्द करें'], ['editReschedule', 'Change dates', 'തീയതി മാറ്റുക', 'तारीख बदलें'], ['setExact', 'Set date', 'തീയതി നൽകുക', 'तारीख तय करें'],
+    ['closeOrder', 'Close order', 'ഓർഡർ ക്ലോസ് ചെയ്യുക', 'ऑर्डर बंद करें'], ['delOrder', 'Delete order permanently', 'ഓർഡർ പൂർണമായി ഡിലീറ്റ് ചെയ്യുക', 'ऑर्डर हमेशा के लिए हटाएं'], ['delOrderWarn', 'This removes the order and its history for good. It cannot be undone.', 'ഈ ഓർഡറും ഹിസ്റ്ററിയും എന്നെന്നേക്കുമായി മാറും. തിരികെ കിട്ടില്ല.', 'यह ऑर्डर और उसका इतिहास हमेशा के लिए हट जाएगा।'], ['cancelOrder', 'Cancel order', 'ഓർഡർ റദ്ദാക്കുക', 'ऑर्डर रद्द करें'], ['editReschedule', 'Change dates', 'തീയതി മാറ്റുക', 'तारीख बदलें'], ['setExact', 'Set date', 'തീയതി നൽകുക', 'तारीख तय करें'],
     ['pickCrew', 'Choose crew', 'ടീമിനെ തിരഞ്ഞെടുക്കുക', 'टीम चुनें'], ['crew', 'Crew', 'ടീം', 'टीम'], ['crewN', '{n} people', '{n} പേർ', '{n} लोग'], ['vehicle', 'Vehicle', 'വാഹനം', 'गाड़ी'], ['driver', 'Driver', 'ഡ്രൈവർ', 'ड्राइवर'], ['fitCost', 'Fitting cost (owner only)', 'ഫിറ്റിംഗ് ചെലവ് (ഉടമയ്ക്ക് മാത്രം)', 'फिटिंग खर्च (सिर्फ मालिक)'], ['addFitCost', 'Add fitting cost', 'ഫിറ്റിംഗ് ചെലവ് ചേർക്കുക', 'फिटिंग खर्च जोड़ें'],
     ['sugFit', 'On fitting duty with {o}', '{o}-ൽ ഫിറ്റിംഗ് ഡ്യൂട്ടി', '{o} के साथ फिटिंग ड्यूटी'], ['onLeave', 'On leave', 'ലീവിലാണ്', 'छुट्टी पर'], ['tooMany', 'Too many', 'വളരെ കൂടുതൽ', 'बहुत ज्यादा'],
     ['customItem', 'Custom item', 'പുതിയ ഐറ്റം (കാറ്റലോഗിൽ ഇല്ലാത്തത്)', 'कस्टम आइटम'], ['addItem', 'Add item', 'ഐറ്റം ചേർക്കുക', 'आइटम जोड़ें'], ['pickItem', 'Pick item', 'ഐറ്റം തിരഞ്ഞെടുക്കുക', 'आइटम चुनें'], ['itemName', 'Item name', 'ഐറ്റത്തിന്റെ പേര്', 'आइटम का नाम'], ['lineNote', 'Note for this item', 'ഈ ഐറ്റത്തിന്റെ കുറിപ്പ്', 'इस आइटम का नोट'],
@@ -902,6 +902,7 @@ function openOrder(id) {
       acts += '<button class="btn bad block sm" style="margin-bottom:8px" data-act="ord-cancel" data-id="' + esc(o.id) + '">' + esc(T('cancelOrder')) + '</button>';
     }
   }
+  if (isOwner()) acts += '<button class="btn bad block sm" style="margin-bottom:8px" data-act="ord-del" data-id="' + esc(o.id) + '">🗑 ' + esc(T('delOrder')) + '</button>';
   h += acts;
   if ((o.history || []).length) h += '<div class="card"><b class="sm">' + esc(T('history')) + '</b>' + o.history.slice().reverse().slice(0, 12).map(function (x) { return '<div class="xs mut">' + new Date(x.t).toLocaleString([], { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) + ' · ' + esc(x.by) + ' · ' + esc(x.what) + '</div>'; }).join('') + '</div>';
   openSheet(h + '<button class="btn block" data-act="close">' + esc(T('close')) + '</button>');
@@ -918,6 +919,15 @@ ACT['ord-fit-ok'] = function (el) { var o = byId('orders', el.getAttribute('data
 ACT['ord-fit-no'] = function (el) { var o = byId('orders', el.getAttribute('data-id')); reasonSheet(T('fitNoBtn'), function (r) { upd('orders', o.id, { fitOk: 'delay', fitNote: r, fitBy: myName(), history: hist(o, 'Cannot fit on ' + o.fitDate + ': ' + r) }); notify(['sales', 'owner'], T('nFitNo', { no: o.no, d: fdateS(o.fitDate), r: r }), { urgent: true, orderId: o.id }); toast(T('saved')); }); };
 ACT['ord-fitted'] = function (el) { var o = byId('orders', el.getAttribute('data-id')); upd('orders', o.id, { status: 'fitted', fittedAt: Date.now(), fitBy: myName(), history: hist(o, 'Fitted / delivered') }); notify(['sales', 'owner'], T('nFitted', { no: o.no, c: o.custName })); closeSheet(); toast(T('saved')); };
 ACT['ord-close'] = function (el) { var o = byId('orders', el.getAttribute('data-id')); upd('orders', o.id, { status: 'closed', history: hist(o, 'Closed') }); closeSheet(); toast(T('saved')); };
+ACT['ord-del'] = function (el) {
+  if (!isOwner()) return; var o = byId('orders', el.getAttribute('data-id')); if (!o) return;
+  openSheet('<h2>' + esc(T('delOrder')) + ' · ' + esc(o.no) + '</h2><div class="card"><b>' + esc(o.custName) + '</b><div class="sm mut">' + esc(T('delOrderWarn')) + '</div></div><div class="two"><button class="btn" data-act="close">' + esc(T('cancel')) + '</button><button class="btn bad" data-act="ord-del2" data-id="' + esc(o.id) + '">' + esc(T('delete')) + '</button></div>');
+};
+ACT['ord-del2'] = function (el) {
+  if (!isOwner()) return; var id = el.getAttribute('data-id');
+  D('fitcost').filter(function (x) { return x.orderId === id; }).forEach(function (x) { del('fitcost', x.id); });
+  del('orders', id); closeSheet(); toast(T('saved'));
+};
 ACT['ord-cancel'] = function (el) { var o = byId('orders', el.getAttribute('data-id')); reasonSheet(T('cancelOrder'), function (r) { upd('orders', o.id, { status: 'cancelled', history: hist(o, 'Cancelled: ' + r) }); notify(['production', 'fitting', 'owner'], T('nCancel', { no: o.no, c: o.custName })); toast(T('saved')); }); };
 ACT['ord-crew'] = function (el) {
   var o = byId('orders', el.getAttribute('data-id')), cur = o.fitCrew || [];
