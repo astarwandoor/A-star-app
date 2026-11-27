@@ -642,7 +642,7 @@ ACT['demo-reset'] = function () { DB.reset(); seedDemo(DB); toast('Demo data res
     ['code', 'Code', 'കോഡ്', 'कोड'], ['category', 'Category', 'വിഭാഗം', 'श्रेणी'], ['height', 'Height', 'ഉയരം', 'ऊंचाई'], ['width', 'Width', 'വീതി', 'चौड़ाई'], ['size', 'Size (H × W)', 'വലിപ്പം (ഉയരം × വീതി)', 'साइज (ऊंचाई × चौड़ाई)'], ['unit', 'Unit', 'യൂണിറ്റ്', 'यूनिट'], ['stock', 'Stock', 'സ്റ്റോക്ക്', 'स्टॉक'],
     ['sellPrice', 'Selling price', 'വിൽപ്പന വില', 'बिक्री भाव'], ['costPrice', 'Cost price (owner only)', 'ഉണ്ടാക്കുന്ന ചെലവ് (ഉടമയ്ക്ക് മാത്രം)', 'लागत (सिर्फ मालिक)'], ['rate', 'Rate', 'നിരക്ക്', 'भाव'], ['codeExists', 'Code already exists', 'കോഡ് മുമ്പേ ഉണ്ട്', 'कोड पहले से है'], ['activeProduct', 'Active', 'ആക്റ്റീവ്', 'चालू'],
     ['finishedGoods', 'Finished goods', 'റെഡി സാധനങ്ങൾ', 'तैयार माल'], ['materials', 'Raw materials', 'അസംസ്കൃത വസ്തുക്കൾ', 'कच्चा माल'], ['stockLog', 'Stock log', 'സ്റ്റോക്ക് ലോഗ്', 'स्टॉक लॉग'], ['adjustStock', 'Update stock', 'സ്റ്റോക്ക് മാറ്റുക', 'स्टॉक बदलें'], ['setStock', 'Set stock', 'സ്റ്റോക്ക് നൽകുക', 'स्टॉक डालें'], ['current', 'Current', 'ഇപ്പോൾ', 'अभी'], ['addRemove', 'Add / remove', 'കൂട്ടുക / കുറയ്ക്കുക', 'जोड़ें / घटाएं'],
-    ['addMaterial', 'Add material', 'മെറ്റീരിയൽ ചേർക്കുക', 'सामग्री जोड़ें'], ['noMaterials', 'No materials', 'മെറ്റീരിയൽ ഇല്ല', 'कोई सामग्री नहीं'], ['toProduce', 'To produce', 'ഉണ്ടാക്കാനുള്ളത്', 'बनाना है'], ['history', 'History', 'ചരിത്രം', 'इतिहास'], ['min', 'Minimum', 'കുറഞ്ഞത്', 'न्यूनतम'],
+    ['makeBuyList', 'Make purchase list', 'വാങ്ങാനുള്ളവ ലിസ്റ്റ് ആക്കുക', 'खरीद सूची बनाएं'], ['needStock', 'Stock needed', 'വേണ്ട സ്റ്റോക്ക്', 'ज़रूरी स्टॉक'], ['lack', 'Short', 'കുറവ്', 'कमी'], ['mainShop', 'Main shop', 'പ്രധാന കട', 'मुख्य दुकान'], ['autoShop', 'Auto (from past purchases)', 'തനിയെ (മുമ്പത്തെ പർച്ചേസ് നോക്കി)', 'ऑटो'], ['editMaterial', 'Edit material', 'മെറ്റീരിയൽ തിരുത്തുക', 'सामग्री बदलें'], ['nothingShort', 'Nothing is short in stock', 'സ്റ്റോക്കിൽ കുറവുള്ളതൊന്നുമില്ല', 'कोई कमी नहीं'], ['planHint', 'Change the quantity, shop, or remove a line. Then make the slips.', 'അളവ്, കട മാറ്റാം, വേണ്ടാത്തത് ഒഴിവാക്കാം. ശേഷം സ്ലിപ്പ് ഉണ്ടാക്കുക.', 'मात्रा/दुकान बदलें, फिर पर्ची बनाएं।'], ['noShop', 'No shop chosen', 'കട തിരഞ്ഞെടുത്തിട്ടില്ല', 'दुकान नहीं चुनी'], ['makeSlips', 'Make purchase slips', 'പർച്ചേസ് സ്ലിപ്പ് ഉണ്ടാക്കുക', 'पर्ची बनाएं'], ['slipsMade', '{n} purchase slip(s) made', '{n} പർച്ചേസ് സ്ലിപ്പ് ഉണ്ടാക്കി', '{n} पर्ची बनी'], ['addMaterial', 'Add material', 'മെറ്റീരിയൽ ചേർക്കുക', 'सामग्री जोड़ें'], ['noMaterials', 'No materials', 'മെറ്റീരിയൽ ഇല്ല', 'कोई सामग्री नहीं'], ['toProduce', 'To produce', 'ഉണ്ടാക്കാനുള്ളത്', 'बनाना है'], ['history', 'History', 'ചരിത്രം', 'इतिहास'], ['min', 'Minimum', 'കുറഞ്ഞത്', 'न्यूनतम'],
     ['newPurchase', 'New purchase', 'പുതിയ വാങ്ങൽ', 'नई खरीद'], ['editPurchase', 'Edit purchase', 'വാങ്ങൽ തിരുത്തുക', 'खरीद बदलें'], ['noPurchases', 'No purchases', 'വാങ്ങലുകൾ ഇല്ല', 'कोई खरीद नहीं'], ['shops', 'Shops', 'കടകൾ', 'दुकानें'], ['shop', 'Shop', 'കട', 'दुकान'], ['shopName', 'Shop name', 'കടയുടെ പേര്', 'दुकान का नाम'], ['addShop', 'Add shop', 'കട ചേർക്കുക', 'दुकान जोड़ें'], ['editShop', 'Edit shop', 'കട തിരുത്തുക', 'दुकान बदलें'], ['noShops', 'No shops', 'കടകൾ ഇല്ല', 'कोई दुकान नहीं'], ['suppliesWhat', 'Supplies', 'നൽകുന്നത്', 'क्या देते हैं'],
     ['toBuy', 'To buy', 'വാങ്ങണം', 'खरीदना है'], ['pickups', 'Pickups', 'പിക്കപ്പ്', 'पिकअप'], ['markPicked', 'Picked up', 'എടുത്തു', 'उठा लिया'], ['recordBill', 'Add bill', 'ബിൽ ചേർക്കുക', 'बिल जोड़ें'], ['billAmt', 'Bill amount', 'ബിൽ തുക', 'बिल की रकम'], ['billPhoto', 'Bill photo', 'ബിൽ ഫോട്ടോ', 'बिल की फोटो'], ['addToMaterials', 'Add items to materials stock', 'ഐറ്റങ്ങൾ മെറ്റീരിയൽ സ്റ്റോക്കിൽ ചേർക്കുക', 'आइटम सामग्री स्टॉक में जोड़ें'], ['bought', 'Bought', 'വാങ്ങി', 'खरीदा'], ['quickItems', 'Saved items (tap to add)', 'സ്ഥിരം ഐറ്റങ്ങൾ (അമർത്തി ചേർക്കുക)', 'पहले के आइटम (दबाकर जोड़ें)'], ['repeatOrder', 'Repeat this purchase', 'ഇതേ വാങ്ങൽ വീണ്ടും', 'यही खरीद दोबारा'],
     ['waShop', 'WhatsApp shop', 'കടയ്ക്ക് വാട്സ്ആപ്പ്', 'दुकान को व्हाट्सऐप'], ['waSlip', 'Pickup slip', 'പിക്കപ്പ് സ്ലിപ്', 'पिकअप पर्ची'], ['nPickup', 'Pickup: {no} from {s}', 'പിക്കപ്പ്: {no} — {s}', 'पिकअप: {no} — {s}'], ['nPicked', 'Picked up: {no} from {s}', 'എടുത്തു: {no} — {s}', 'उठा लिया: {no} — {s}'],
@@ -711,8 +711,13 @@ function seedDemo(DB) {
   set('invoices', 'i1', { kind: 'i', no: 'AS/' + fy(addDays(t, -6)) + '/001', date: addDays(t, -6), custId: 'c1', custName: 'Green Valley School', custPhone: '9447000001', custAddr: 'Manjeri', custGst: '', lines: il, gstOn: true, gstType: 'cgst', discount: '', notes: '', tc: biz().tcI, orderId: 'o4', status: 'unpaid', payments: [{ amount: 10000, date: addDays(t, -6), mode: 'UPI', note: 'Advance' }], follow: { next: t, notes: [] }, createdAt: now });
   set('quotes', 'q1', { kind: 'q', no: 'AS-Q/' + fy(t) + '/001', date: t, custId: 'c2', custName: 'Sunrise Apartments', custPhone: '9447000002', custAddr: 'Kozhikode', custGst: '', lines: [{ pid: 'AS01', code: 'AS-01', name: 'Big family Automatic swing', qty: 1, rate: 42000, gst: 18, hsn: '9506', h: '', w: '' }], gstOn: true, gstType: 'cgst', discount: '', notes: '', tc: biz().tcQ, status: 'sent', payments: [], createdAt: now });
   set('suppliers', 's1', { name: 'Kerala Steel Traders', phone: '9447000100', supplies: 'MS pipe, sheets', createdAt: now });
-  set('materials', 'm1', { name: 'MS pipe 2 inch', unit: 'nos', stock: 40, min: 20, createdAt: now });
-  set('materials', 'm2', { name: 'Paint (red)', unit: 'ltr', stock: 6, min: 10, createdAt: now });
+  set('suppliers', 's2', { name: 'Malabar Paints', phone: '9447000101', place: 'Manjeri', createdAt: now });
+  set('suppliers', 's3', { name: 'City Hardware', phone: '9447000102', place: 'Malappuram', createdAt: now });
+  set('materials', 'm1', { name: 'MS pipe 2 inch', unit: 'nos', qty: 10, need: 30, shopId: 's1', createdAt: now });
+  set('materials', 'm3', { name: 'Nut & bolt set', unit: 'box', qty: 2, need: 8, shopId: '', createdAt: now });
+  set('materials', 'm4', { name: 'Swing chain', unit: 'm', qty: 50, need: 40, shopId: 's3', createdAt: now });
+  set('materials', 'm2', { name: 'Paint (red)', unit: 'ltr', qty: 6, need: 20, shopId: 's2', createdAt: now });
+  set('purchases', 'pd1', { no: 'PUR-0001', supplierId: 's3', supplierName: 'City Hardware', lines: [{ name: 'Nut & bolt set', qty: 5, unit: 'box' }], status: 'bought', history: [], createdAt: now - 86400000 * 5 });
   set('notices', 'n1', { text: 'Salary will be paid on the 10th of every month. Attendance must be marked daily.', pin: true, by: 'owner', byName: 'Owner', t: now - 10000 });
   set('leaves', 'l1', { staffId: 'E006', staffName: 'Sunil', from: addDays(t, 3), to: addDays(t, 5), days: 3, reason: 'Family function', home: false, status: 'pending', createdAt: now });
   set('advances', 'a1', { staffId: 'E005', staffName: 'Ramesh', amount: 2000, date: addDays(t, -2), reason: 'Medical', status: 'pending', settled: false, createdAt: now });
@@ -1135,9 +1140,14 @@ VIEWS.stock = function () {
   if (tab === 'fin') {
     h += '<input type="search" id="skq" data-inp="skq" placeholder="' + esc(T('search')) + '" value="' + esc(S.q) + '" style="margin-bottom:10px"><div id="slist">' + stockList() + '</div>';
   } else if (tab === 'mat') {
-    h += '<button class="btn primary block" style="margin-bottom:10px" data-act="mat-new">+ ' + esc(T('addMaterial')) + '</button>';
-    var a = D('materials').slice().sort(function (x, y) { return x.name.toLowerCase() > y.name.toLowerCase() ? 1 : -1; });
-    h += a.length ? a.map(function (m) { return '<div class="card tap" data-act="stk-adj" data-k="materials" data-id="' + esc(m.id) + '"><div class="row sp"><b>' + esc(m.name) + '</b><span class="chip ' + (num(m.qty) > 0 ? 'ok' : 'warn') + '">' + esc(num(m.qty) + ' ' + (m.unit || '')) + '</span></div></div>'; }).join('') : '<div class="empty">' + esc(T('noMaterials')) + '</div>';
+    var a = D('materials').slice().sort(function (x, y) { return x.name.toLowerCase() > y.name.toLowerCase() ? 1 : -1; }), sh = matShort();
+    h += '<button class="btn primary block" style="margin-bottom:8px" data-act="mat-new">+ ' + esc(T('addMaterial')) + '</button>';
+    h += '<button class="btn block' + (sh.length ? ' dark' : '') + '" style="margin-bottom:10px" data-act="plan-open">🛒 ' + esc(T('makeBuyList')) + (sh.length ? ' (' + sh.length + ')' : '') + '</button>';
+    h += a.length ? a.map(function (m) {
+      var need = num(m.need), q = num(m.qty), lack = need > q ? need - q : 0, sup = byId('suppliers', matShopId(m));
+      return '<div class="card"><div class="row sp"><div class="grow tap" data-act="stk-adj" data-k="materials" data-id="' + esc(m.id) + '"><b>' + esc(m.name) + '</b>' + (need ? '<div class="xs mut">' + esc(T('needStock')) + ': ' + need + ' ' + esc(m.unit || '') + (sup ? ' · ' + esc(sup.name) : '') + '</div>' : '') + '</div>' +
+        (lack ? '<span class="chip bad">' + esc(T('lack')) + ' ' + lack + '</span>' : '') + '<span class="chip ' + (q > 0 ? 'ok' : 'warn') + '" data-act="stk-adj" data-k="materials" data-id="' + esc(m.id) + '">' + esc(q + ' ' + (m.unit || '')) + '</span><button class="btn sm" data-act="mat-edit" data-id="' + esc(m.id) + '">✎</button></div></div>';
+    }).join('') : '<div class="empty">' + esc(T('noMaterials')) + '</div>';
   } else {
     var lg = D('stocklog');
     h += lg.length ? lg.map(function (x) { return '<div class="card"><div class="row sp"><b>' + esc(x.name) + '</b><span class="chip ' + (x.delta > 0 ? 'ok' : 'bad') + '">' + (x.delta > 0 ? '+' : '') + x.delta + '</span></div><div class="xs mut">' + new Date(x.t).toLocaleString([], { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) + ' · ' + esc(x.by) + (x.note ? ' · ' + esc(x.note) : '') + ' · → ' + x.after + '</div></div>'; }).join('') : '<div class="empty">—</div>';
@@ -1150,10 +1160,84 @@ function stockList() {
   return a.map(function (p) { return '<div class="card tap" data-act="stk-adj" data-k="products" data-id="' + esc(p.id) + '"><div class="row"><img src="' + esc(pimg(p.code, p.photo)) + '" alt="" style="width:46px;height:46px;object-fit:contain;background:#fff;border-radius:8px;border:1px solid var(--line)" loading="lazy"><div class="grow"><span class="xs b" style="color:var(--red)">' + esc(p.code) + '</span><div class="b">' + esc(p.name) + '</div></div>' + stockChip(p) + '</div></div>'; }).join('') || '<div class="empty">' + esc(T('noProducts')) + '</div>';
 }
 CHG.skq = function (t) { S.q = t.value; var e = qs('slist'); if (e) e.innerHTML = stockList(); };
-ACT['mat-new'] = function () {
-  openSheet('<h2>' + esc(T('addMaterial')) + '</h2><label class="l">' + esc(T('itemName')) + '</label><input type="text" id="mt_name" placeholder="Iron pipe 2 inch"><div class="two"><div><label class="l">' + esc(T('unit')) + '</label><input type="text" id="mt_unit" value="nos"></div><div><label class="l">' + esc(T('qty')) + '</label><input type="number" id="mt_qty" value="0"></div></div><div class="two" style="margin-top:12px"><button class="btn" data-act="close">' + esc(T('cancel')) + '</button><button class="btn primary" data-act="mat-save">' + esc(T('save')) + '</button></div>');
+function matShopOpts(sel, m) {
+  return '<option value="">' + esc(T('autoShop')) + '</option>' + D('suppliers').map(function (x) { return '<option value="' + esc(x.id) + '" ' + (sel === x.id ? 'selected' : '') + '>' + esc(x.name) + '</option>'; }).join('');
+}
+function matForm(m) {
+  var e = !!m.id;
+  openSheet('<h2>' + esc(T(e ? 'editMaterial' : 'addMaterial')) + '</h2><label class="l">' + esc(T('itemName')) + '</label><input type="text" id="mt_name" placeholder="Iron pipe 2 inch" value="' + esc(m.name || '') + '"><div class="two"><div><label class="l">' + esc(T('unit')) + '</label><input type="text" id="mt_unit" value="' + esc(m.unit || 'nos') + '"></div><div><label class="l">' + esc(T('qty')) + '</label><input type="number" inputmode="decimal" id="mt_qty" value="' + esc(num(m.qty)) + '"></div></div>' +
+    '<label class="l">' + esc(T('needStock')) + '</label><input type="number" inputmode="decimal" id="mt_need" placeholder="30" value="' + (num(m.need) ? esc(num(m.need)) : '') + '"><label class="l">' + esc(T('mainShop')) + '</label><select id="mt_shop">' + matShopOpts(m.shopId || '') + '</select>' +
+    '<div class="two" style="margin-top:12px"><button class="btn" data-act="close">' + esc(T('cancel')) + '</button><button class="btn primary" data-act="mat-save">' + esc(T('save')) + '</button></div>' +
+    (e ? '<button class="btn bad block sm" style="margin-top:10px" data-act="mat-del" data-id="' + esc(m.id) + '">🗑 ' + esc(T('delete')) + '</button>' : ''));
+  S.sheetFn = { matId: m.id || '' };
+}
+ACT['mat-new'] = function () { matForm({}); };
+ACT['mat-edit'] = function (el) { var m = byId('materials', el.getAttribute('data-id')); if (m) matForm(m); };
+ACT['mat-save'] = function () {
+  var n = val('mt_name').trim(); if (!n) { toast(T('needName')); return; }
+  var id = (S.sheetFn && S.sheetFn.matId) || '', old = id ? byId('materials', id) : null, o = old ? clone(old) : { createdAt: Date.now() };
+  o.name = n; o.unit = val('mt_unit').trim() || 'nos'; o.need = num(val('mt_need')); o.shopId = val('mt_shop');
+  var nq = num(val('mt_qty')); if (!old) o.qty = nq; else if (nq !== num(old.qty)) { o.qty = nq; put('stocklog', uid('sl'), { kind: 'materials', itemId: id, name: n, delta: nq - num(old.qty), after: nq, by: myName(), note: 'Edited', t: Date.now() }); }
+  put('materials', id || uid('m'), o); closeSheet(); toast(T('saved'));
 };
-ACT['mat-save'] = function () { var n = val('mt_name').trim(); if (!n) { toast(T('needName')); return; } var id = uid('m'); put('materials', id, { name: n, unit: val('mt_unit').trim() || 'nos', qty: num(val('mt_qty')), createdAt: Date.now() }); closeSheet(); toast(T('saved')); };
+ACT['mat-del'] = function (el) {
+  var id = el.getAttribute('data-id'); S.sheetFn = { matId: id };
+  openSheet('<h2>' + esc(T('confirmDelete')) + '</h2><div class="card"><b>' + esc((byId('materials', id) || {}).name || '') + '</b></div><div class="two"><button class="btn" data-act="close">' + esc(T('cancel')) + '</button><button class="btn bad" data-act="mat-del2" data-id="' + esc(id) + '">' + esc(T('delete')) + '</button></div>');
+};
+ACT['mat-del2'] = function (el) { del('materials', el.getAttribute('data-id')); closeSheet(); toast(T('saved')); };
+
+/* ---- shortage -> purchase list ---- */
+function matShopId(m) {
+  if (m.shopId && byId('suppliers', m.shopId)) return m.shopId;
+  var c = {}, k = String(m.name || '').trim().toLowerCase(), best = '', bn = 0;
+  D('purchases').forEach(function (p) { if (!p.supplierId) return; (p.lines || []).forEach(function (l) { if (String(l.name || '').trim().toLowerCase() === k) { c[p.supplierId] = (c[p.supplierId] || 0) + 1; if (c[p.supplierId] > bn) { bn = c[p.supplierId]; best = p.supplierId; } } }); });
+  return best && byId('suppliers', best) ? best : '';
+}
+function matShort() { return D('materials').filter(function (m) { return num(m.need) > num(m.qty); }); }
+var PL = null;
+ACT['plan-open'] = function () {
+  var sh = matShort();
+  PL = { lines: sh.map(function (m) { return { name: m.name, unit: m.unit || 'nos', qty: num(m.need) - num(m.qty), shopId: matShopId(m) }; }) };
+  planRender();
+};
+function planRead() { if (!PL || !qs('pl_x0') && !PL.lines.length) return; PL.lines.forEach(function (l, i) { if (qs('pl_x' + i)) { l.qty = num(val('pl_x' + i)); l.shopId = val('pl_s' + i); } }); }
+function planRender() {
+  var h = '<h2>🛒 ' + esc(T('makeBuyList')) + '</h2>';
+  if (!PL.lines.length) h += '<div class="empty">' + esc(T('nothingShort')) + '</div>';
+  else h += '<div class="sm mut" style="margin-bottom:8px">' + esc(T('planHint')) + '</div>';
+  var order = PL.lines.map(function (l, i) { return i; }).sort(function (a, b) { var sa = PL.lines[a].shopId, sb = PL.lines[b].shopId; return sa === sb ? a - b : (sa === '' ? 1 : sb === '' ? -1 : (sa > sb ? 1 : -1)); }), last = null;
+  order.forEach(function (i) {
+    var l = PL.lines[i];
+    if (l.shopId !== last) { last = l.shopId; var sp = byId('suppliers', l.shopId); h += '<div class="sec">' + esc(sp ? sp.name : T('noShop')) + '</div>'; }
+    h += '<div class="card"><div class="row sp"><b class="grow">' + esc(l.name) + '</b><button class="btn sm bad" data-act="pl-del" data-i="' + i + '">✕</button></div><div class="row" style="margin-top:6px"><button class="btn sm" data-act="pl-q" data-i="' + i + '" data-d="-1">−</button><input type="number" inputmode="decimal" id="pl_x' + i + '" style="width:80px" value="' + esc(l.qty) + '"><button class="btn sm" data-act="pl-q" data-i="' + i + '" data-d="1">+</button><span class="mut sm">' + esc(l.unit) + '</span><select id="pl_s' + i + '" data-chg="pl_shop" class="grow">' + matShopOpts(l.shopId).replace('<option value="">' + esc(T('autoShop')) + '</option>', '<option value="">—</option>') + '</select></div></div>';
+  });
+  h += '<button class="btn block sm" style="margin-top:8px" data-act="pl-add">+ ' + esc(T('addItem')) + '</button>';
+  h += '<div class="two" style="margin-top:12px"><button class="btn" data-act="close">' + esc(T('cancel')) + '</button><button class="btn primary" data-act="pl-go"' + (PL.lines.length ? '' : ' disabled') + '>' + esc(T('makeSlips')) + '</button></div>';
+  openSheet(h);
+}
+CHG.pl_shop = function () { planRead(); planRender(); };
+ACT['pl-q'] = function (el) { planRead(); var l = PL.lines[+el.getAttribute('data-i')]; l.qty = Math.max(0, num(l.qty) + num(el.getAttribute('data-d'))); planRender(); };
+ACT['pl-del'] = function (el) { planRead(); PL.lines.splice(+el.getAttribute('data-i'), 1); planRender(); };
+ACT['pl-add'] = function () {
+  planRead();
+  var have = {}; PL.lines.forEach(function (l) { have[l.name.toLowerCase()] = 1; });
+  var opts = D('materials').filter(function (m) { return !have[m.name.toLowerCase()]; });
+  openSheet('<h2>' + esc(T('addItem')) + '</h2>' + (opts.length ? '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px">' + opts.map(function (m) { return '<button class="btn sm" data-act="pl-pick" data-id="' + esc(m.id) + '">+ ' + esc(m.name) + '</button>'; }).join('') + '</div>' : '') +
+    '<label class="l">' + esc(T('itemName')) + '</label><input type="text" id="pla_n"><div class="two"><div><label class="l">' + esc(T('qty')) + '</label><input type="number" inputmode="decimal" id="pla_q" value="1"></div><div><label class="l">' + esc(T('unit')) + '</label><input type="text" id="pla_u" value="nos"></div></div><div class="two" style="margin-top:12px"><button class="btn" data-act="pl-back">' + esc(T('back')) + '</button><button class="btn primary" data-act="pl-addgo">' + esc(T('save')) + '</button></div>');
+};
+ACT['pl-back'] = function () { planRender(); };
+ACT['pl-pick'] = function (el) { var m = byId('materials', el.getAttribute('data-id')); PL.lines.push({ name: m.name, unit: m.unit || 'nos', qty: Math.max(1, num(m.need) - num(m.qty)), shopId: matShopId(m) }); planRender(); };
+ACT['pl-addgo'] = function () { var n = val('pla_n').trim(); if (!n) { toast(T('needName')); return; } PL.lines.push({ name: n, unit: val('pla_u').trim() || 'nos', qty: num(val('pla_q')) || 1, shopId: '' }); planRender(); };
+ACT['pl-go'] = function () {
+  planRead(); var g = {}, n = 0, base = +nextNo('', 'purchases', 'no', 1);
+  PL.lines.filter(function (l) { return num(l.qty) > 0; }).forEach(function (l) { (g[l.shopId || ''] = g[l.shopId || ''] || []).push({ name: l.name, qty: num(l.qty), unit: l.unit }); });
+  Object.keys(g).forEach(function (sid) {
+    var sp = byId('suppliers', sid) || {}, p = { createdAt: Date.now() + n, status: 'to-buy', history: [], no: 'PUR-' + String(base + n).padStart(4, '0') };
+    p.supplierId = sid; p.supplierName = sp.name || ''; p.supplierPhone = sp.phone || ''; p.supplierPlace = sp.place || ''; p.lines = g[sid]; p.driverId = ''; p.driverName = ''; p.note = 'Auto: low stock'; p.history = hist(p, 'Created from low stock');
+    put('purchases', uid('p'), p); n++;
+  });
+  closeSheet(); toast(n ? T('slipsMade', { n: n }) : T('nothingShort'));
+};
 ACT['stk-adj'] = function (el) {
   var k = el.getAttribute('data-k'), id = el.getAttribute('data-id'), it = byId(k, id); if (!it) return;
   var cur = num(k === 'products' ? it.stock : it.qty); S.sheetFn = { k: k, id: id };
